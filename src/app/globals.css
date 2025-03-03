@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+@layer base {
+  :root {
+    --background: 60 54% 98%;
+    --foreground: 39 84% 4%;
+    --card: 60 54% 100%;
+    --card-foreground: 39 84% 4%;
+    --popover: 60 54% 100%;
+    --popover-foreground: 39 84% 4%;
+    --primary: 47 100% 50%;
+    --primary-foreground: 39 84% 4%;
+    --secondary: 60 54% 92%;
+    --secondary-foreground: 39 84% 4%;
+    --muted: 60 54% 92%;
+    --muted-foreground: 39 38% 40%;
+    --accent: 60 54% 92%;
+    --accent-foreground: 39 84% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 60 54% 98%;
+    --border: 39 12% 88%;
+    --input: 39 12% 88%;
+    --ring: 47 100% 50%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 39 84% 4%;
+    --foreground: 60 54% 98%;
+    --card: 39 84% 4%;
+    --card-foreground: 60 54% 98%;
+    --popover: 39 84% 4%;
+    --popover-foreground: 60 54% 98%;
+    --primary: 47 100% 50%;
+    --primary-foreground: 39 84% 4%;
+    --secondary: 39 38% 12%;
+    --secondary-foreground: 60 54% 98%;
+    --muted: 39 38% 12%;
+    --muted-foreground: 39 38% 60%;
+    --accent: 39 38% 12%;
+    --accent-foreground: 60 54% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 60 54% 98%;
+    --border: 39 38% 12%;
+    --input: 39 38% 12%;
+    --ring: 47 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
